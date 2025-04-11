@@ -77,7 +77,7 @@ def main():
 
             # Check the run status for failures
             if run.status == "failed":
-            print(f"Run failed: {run.last_error}")
+                print(f"Run failed: {run.last_error}")
     
             # Show the latest response from the agent
             messages = project_client.agents.list_messages(thread_id=thread.id)
